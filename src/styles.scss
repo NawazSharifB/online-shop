@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+
+// font-family: 'Lora', serif;
+// font-family: 'Noto Sans JP', sans-serif;
+// font-family: 'Piazzolla', serif;
+// font-family: 'Playfair Display', serif;
+// font-family: 'Roboto Slab', serif;
+// font-family: 'Source Sans Pro', sans-serif;
+// font-family: 'Ubuntu', sans-serif;
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; overflow-x: scroll;}
+
+.button-design-black {
+    background: #1a1a1a;
+    color: white;
+    font-family: 'Piazzolla', serif;
+
+    &:hover {
+        color: #66ff66;
+    }
+    &:disabled {
+        background: #cccccc;
+    }
+}
+
