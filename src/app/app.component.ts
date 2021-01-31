@@ -1,4 +1,4 @@
-import { DataService } from './data.service';
+import { DataService } from './app-shared/services/data.service';
 import { Component, ChangeDetectorRef, OnInit, OnDestroy } from '@angular/core';
 
 import { MediaObserver, MediaChange } from '@angular/flex-layout';
