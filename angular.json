@@ -20,7 +20,7 @@
             "outputPath": "dist/online-shop",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
+            "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": [
@@ -44,7 +44,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
@@ -129,6 +128,7 @@
   },
   "defaultProject": "online-shop",
   "cli": {
-    "analytics": "0b764791-d68a-4b3e-8bbf-1bec6d131cc0"
+    "analytics": "0b764791-d68a-4b3e-8bbf-1bec6d131cc0",
+    "cache": {"enabled": false}
   }
 }
