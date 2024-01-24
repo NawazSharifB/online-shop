@@ -15,7 +15,6 @@ export class NavComponent implements OnInit, OnDestroy {
   constructor(public dataService: DataService) { }
 
   ngOnInit(): void {
-
     this.dSub = this.dataService.cart$.subscribe(products => {
       this.totalCartItem = 0;
       products.forEach( product => {

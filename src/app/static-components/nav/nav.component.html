@@ -1,7 +1,8 @@
 <div class="main-div">
     <mat-toolbar fxlayout="row">
-        <h1 routerLink="/">SHOP</h1>
-        <button 
+        <h1 routerLink="/" class="logo">SHOP</h1>
+        <button
+            class="nav-item"
             mat-button 
             routerLink="/all-products"
             [routerLinkActiveOptions]="{exact: true}"
@@ -9,15 +10,24 @@
             fxHide.lt-sm
             [ngStyle.gt-xs]="{'margin-left.px': 20}">all-products</button>
         
-        <button mat-button routerLink="/cart" [routerLinkActiveOptions]="{exact: true}"
-        routerLinkActive="active-route" fxHide.lt-sm>Cart</button>
+        <button
+          class="nav-item"
+          mat-button
+          routerLink="/cart"
+          [routerLinkActiveOptions]="{exact: true}"
+          routerLinkActive="active-route"
+          fxHide.lt-sm
+        >Cart</button>
+
         <span fxFlex="1 1 auto"></span>
-        <!-- <button mat-button routerLink="/checkout"[routerLinkActiveOptions]="{exact: true}"
-        routerLinkActive="active-route" fxHide.lt-sm>Checkout</button> -->
-        <button 
-            mat-icon-button
-            [ngStyle.gt-xs]="{'margin-right.px': 20}">
-            <mat-icon [matBadge]="totalCartItem" matBadgeColor="warn" routerLink="/cart">add_shopping_cart</mat-icon>
+        <button
+          mat-icon-button
+          routerLink="/cart"
+          [routerLinkActiveOptions]="{exact: true}"
+          routerLinkActive="active-route"
+          [ngStyle.gt-xs]="{'margin-right.px': 20}"
+        >
+          <mat-icon [matBadge]="totalCartItem" matBadgeColor="warn" routerLink="/cart">add_shopping_cart</mat-icon>
         </button>
         <button class="nav-dropdown"
             mat-button
