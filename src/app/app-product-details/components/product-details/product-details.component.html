@@ -12,24 +12,25 @@
     <div fxFlex="1 1 100%"
         fxFlex.gt-md="1 1 70%">
         <mat-card >
-            <div fxLayout="column"
-                fxLayout.gt-sm="row"
-                >
+            <div fxLayout="column" fxLayout.gt-sm="row">
                 <div class="img"
                     fxFlex.gt-sm="0 0 35%"
                     [ngStyle]="{
                         'width.%': 90,
                         'height.px': 250,
-                        'margin-left.%': 5
+                        'margin-left.%': 5,
+                        'padding-top.px': 20,
                     }"
                     [ngStyle.sm]="{
                         'width.%': 90,
                         'height.px': 350,
-                        'margin-left.%': 5
+                        'margin-left.%': 5,
+                        'padding-top.px': 20,
                     }"
                     [ngStyle.gt-sm]="{
                         'height.px': 250,
-                        'margin-left.px': 20
+                        'margin-left.px': 20,
+                        'padding-top.px': 20,
                     }">
                     <img [src]="product.picture">
                 </div>
@@ -37,7 +38,7 @@
                     [ngStyle]="{
                         'width.%': 90,
                         'margin': 'auto',
-                        'margin-top.px': 30,
+                        'margin-top.px': 40,
                         'text-align': 'center'}"
                         [ngStyle.gt-sm]="{
                             'margin-top.px': 20,
