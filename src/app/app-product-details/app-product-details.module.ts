@@ -19,12 +19,9 @@ import { AppViewCartModule } from '../app-view-cart/app-view-cart.module';
         AppSharedModule,
         CommonModule,
         RouterModule.forChild([
-            {path: ':id', component: ProductDetailsComponent}
+            {path: ':id', component: ProductDetailsComponent},
+            {path: '', redirectTo: '/all-products', pathMatch: 'full'},
         ])
     ],
-    exports: [
-        // ProductDetailsComponent,
-        // AppAddToCartModule
-    ]
   })
 export class AppProductDetailsModule { }
